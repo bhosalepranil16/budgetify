@@ -1,0 +1,94 @@
+.Container {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.Top {
+    height: 40vh;
+  
+}
+
+.Budget {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.BudgetTitle {
+    margin-top: 35px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.BudgetValue {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.HamBurger {
+    width: 5%;
+    color : rgb(156, 156, 156);
+    margin-left: 5px;
+    margin-top: 10px;
+    background: none;
+    z-index: 300;
+    padding: 6px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 5px;
+}
+.HamBurger:hover {
+    color: white;
+}
+.HamBurger:active {
+    transform: translateY(-2px);
+}
+.HamBurger:focus {
+    border: rgb(75, 250, 235) 1px solid;
+}
+.Username {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin: auto;
+    margin-left: 49%;
+}
+
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+ }
+ 
+@media (max-width:450px) {
+    .Top {
+        margin: 0;
+        width: 100%;
+    }
+    .Logout {
+        width: 10%;
+        font-size: 10px;
+        margin-left : 5px;
+        margin-top: 5px;
+    }
+    .Username {
+        margin-left: 35%;
+        font-size: 25px;
+    }
+    .HamBurger {
+        width: 20%;
+        height: 20%;
+    }
+}

@@ -1,0 +1,42 @@
+.BudgetIncome {
+    padding: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    background-color: #28B9B5;
+}
+
+.BudgetIncomeText{
+    float: left;
+    font-size: 18px;
+    color: #444;
+    margin-top: 2px;
+}
+
+.BudgetIncomeValue{
+    letter-spacing: 1px;
+    float: left;
+}
+
+.BudgetIncomePercentage{
+    float: left;
+    width: 34px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-left: 10px;
+}
+
+.Clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Right { float: right; }
+
+@media (max-width:400px) {
+    .BudgetIncome {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}

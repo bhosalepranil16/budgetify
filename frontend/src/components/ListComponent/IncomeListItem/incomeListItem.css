@@ -1,0 +1,73 @@
+.Item {
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.Item:first-child { border-top: 1px solid #e7e7e7; }
+.Item:nth-child(even) { background-color: #f7f7f7; }
+
+.ItemDescription {
+    float: left;
+}
+
+.ItemValue {
+    float: left;
+    transition: transform 0.3s;
+}
+
+.ItemPercentage {
+    float: left;
+    margin-left: 20px;
+    transition: transform 0.3s;
+    font-size: 11px;
+    background-color: #a8fffc;
+    padding: 3px;
+    border-radius: 3px;
+    width: 32px;
+    text-align: center;
+}
+
+
+
+.ItemDelete {
+    float: left;
+}
+
+.ItemDeleteBtn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+    color: #28B9B5;
+}
+
+.Income .ItemValue,
+.Income .ItemDeleteBtn {
+    color: #28B9B5;
+}
+
+.ItemDeleteBtn:focus { outline: none; }
+.ItemDeleteBtn:active { transform: translateY(2px); }
+
+.Item:hover .ItemDeleteBtn { display: block; }
+.Item:hover .ItemValue { transform: translateX(-20px); }
+.Item:hover .ItemPercentage { transform: translateX(-20px); }
+
+.Clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Right { float: right; }
+
+@media (max-width:400px) {
+    .Item {
+        display: block;
+        width: 90%;
+    }
+}

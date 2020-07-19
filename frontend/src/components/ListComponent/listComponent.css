@@ -1,0 +1,48 @@
+.Container {
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.Income {
+    float: left;
+    width: 475px;
+    margin-right: 50px;
+}
+
+.Expenses {
+    float: left;
+    width: 475px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.IcomeTitle { color: #28B9B5; }
+.ExpensesTitle { color: #FF5049; }
+
+.Clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width:400px) {
+    .Container {
+        width: 90%;
+    }
+    .Income, .Expenses {
+        width: 100%;
+        float: none;
+    }
+    .IcomeTitle {
+        margin-top: -45px;
+    }
+    .IcomeTitle, .ExpensesTitle {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

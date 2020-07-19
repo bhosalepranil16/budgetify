@@ -1,0 +1,48 @@
+.BudgetExpenses {
+    padding: 12px;
+    text-transform: uppercase;
+    background-color: #FF5049;
+}
+
+.BudgetExpensesText {
+    float: left;
+    font-size: 18px;
+    color: #444;
+    margin-top: 2px;
+}
+
+.BudgetExpensesValue {
+    letter-spacing: 1px;
+    float: left;
+}
+
+.BudgetExpensesPercentage {
+    float: left;
+    width: 34px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-left: 10px;
+}
+
+.BudgetExpensesPercentage {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+.Clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Right { float: right; }
+
+@media (max-width:400px) {
+    .BudgetExpenses {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}

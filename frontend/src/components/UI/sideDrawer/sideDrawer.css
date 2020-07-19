@@ -1,0 +1,68 @@
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height : 100%;
+    left : 0;
+    top : 0;
+    z-index: 100;
+    background-color: white;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-100%);
+}
+
+.Exit {
+    float: right;
+    background: none;
+    border: none;
+    position: relative;
+    padding: 0;
+    width: 10%;
+    color: #FF5049;
+    display: block;
+}
+
+.User {
+    display: block;
+    height: 20%;
+    text-align: center;
+}
+
+.Username {
+    text-align: center;
+}
+
+.Btn {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 5px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    color: #FF5049;
+}
+.Btn:active {
+    border: none;
+}
+@media(max-width : 450px) {
+    .Exit{
+        position: relative;
+        top: 0;
+        right: 0px;
+        width: 10%;
+    }
+    .Username {
+        margin-top: 50px;
+    }
+}

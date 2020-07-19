@@ -1,0 +1,84 @@
+.Add {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+.AddContainer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.AddType {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: white;
+    margin: 5px 10px 5px 0;
+    margin-right: 10px;
+}
+
+.AddDescription {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 12px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 400px;
+}
+.AddValue {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: white;
+    width: 100px;
+    margin: 5px 10px 5px 0;
+    margin-right: 10px;
+}
+
+.AddBtn {
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    resize: vertical;
+    background-color: white;
+    width: 5%;
+    margin: 5px 10px 5px 0;
+    vertical-align: center;
+    color: #28B9B5;
+    padding: 10px;
+}
+
+.AddBtn:active { transform: translateY(-2px); }
+
+.AddType:focus,
+.AddDescription:focus,
+.AddValue:focus {
+    outline: none;
+    border: 1px solid #28B9B5;
+}
+
+.AddBtn:focus { outline: none; }
+
+@media (max-width:400px) {
+    .Add{
+        width: 90%;
+        margin-left: 0;
+    }
+    .AddContainer {
+        width: 90%;
+    }
+    .AddType {
+        width: 40%;
+    }
+    .AddDescription {
+        width: 90%; 
+    }
+    .AddValue{
+        width: 40%;
+    }
+    .AddBtn {
+        width: 95%;
+    }
+}
